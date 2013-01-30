@@ -1,0 +1,34 @@
+name = m24
+description = Tema M24.
+core = 7.x
+engine = phptemplate
+
+; CSS
+stylesheets[all][] 		= css/bootstrap.min.css
+stylesheets[all][] 		= css/bootstrap-responsive.min.css
+stylesheets[all][] 		= css/style.css
+
+;Deshabilitar estilos del sistema
+stylesheets[all][] 		= system.base.css
+stylesheets[all][] 		= system.menus.css
+stylesheets[all][]		= system.messages.css
+stylesheets[all][]		= system.theme.css
+stylesheets[all][]		= comment.css
+stylesheets[all][]		= field.css
+stylesheets[all][]		= search.css
+stylesheets[all][]		= user.css
+
+;SCRIPTS
+scripts[] = js/bootstrap.min.js
+scripts[] = js/scripts.js
+; respond, html5shim
+
+; REGIONS
+regions[header]         = Header
+regions[navigation]     = Navigation bar
+regions[highlighted]    = Highlighted
+regions[content]        = Content
+regions[sidebar_first]  = First sidebar
+regions[sidebar_second]  = Second sidebar
+regions[footer]         = Footer
+regions[bottom]         = Page bottom
