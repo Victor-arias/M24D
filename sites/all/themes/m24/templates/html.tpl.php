@@ -50,9 +50,10 @@
   <meta name="HandheldFriendly" content="true">
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="cleartype" content="on">
-  <?php print $styles; ?>
   <meta name="description" content="">
   <meta name="author" content="Telemedellín">
+  <?php print $styles; ?>
+  <?php print $scripts; ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <p id="skip-link">
@@ -61,9 +62,5 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
-  <!--Scripts-->
-  <div class="hidden">
-  <?php print $scripts; ?>
-  </div>
 </body>
 </html>

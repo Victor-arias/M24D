@@ -4,6 +4,34 @@ iframe
   height: auto;
   min-height: 433px;
 }
+.copyright
+{
+  text-align: center;
+}
+.menu-usuario li, 
+.menu-utilitario li
+{
+  box-sizing: border-box;
+  float: left;
+  list-style: none;
+}
+#app
+{
+  position: relative;
+}
+#map_canvas
+{
+  min-height: 500px;
+  width: 100%;
+}
+#map_overlay
+{
+  position: absolute;
+  background: rgba(0, 0, 0, .9);
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
 
 
 /**

@@ -137,7 +137,7 @@
         </aside> <!-- /#sidebar-second -->
       <?php endif; ?>
   </div> <!-- /#main-wrapper -->
-  <footer>
+  <footer class="row">
     <?php print render($page['footer']); ?>
   </footer>
   <?php print render($page['bottom']); ?>
