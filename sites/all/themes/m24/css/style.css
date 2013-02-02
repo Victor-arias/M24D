@@ -1,12 +1,172 @@
 /*VA*/
+@font-face {
+    font-family: 'digital_display';
+    src: url('../fonts/digital_display_tfb-webfont.eot');
+    src: url('../fonts/digital_display_tfb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/digital_display_tfb-webfont.woff') format('woff'),
+         url('../fonts/digital_display_tfb-webfont.ttf') format('truetype'),
+         url('../fonts/digital_display_tfb-webfont.svg#digital_display_tfbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'eurostileregular';
+    src: url('../fonts/eurosti-webfont.eot');
+    src: url('../fonts/eurosti-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/eurosti-webfont.woff') format('woff'),
+         url('../fonts/eurosti-webfont.ttf') format('truetype'),
+         url('../fonts/eurosti-webfont.svg#eurostileregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'eurostilebold';
+    src: url('../fonts/eurostib-webfont.eot');
+    src: url('../fonts/eurostib-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/eurostib-webfont.woff') format('woff'),
+         url('../fonts/eurostib-webfont.ttf') format('truetype'),
+         url('../fonts/eurostib-webfont.svg#eurostilebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+a
+{
+  color: #e5581b;
+}
+a:hover
+{
+  color: #FFF;
+  text-decoration: none;
+}
+aside, section
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+}
+body
+{
+  background: #000 url(../images/bg-tarde.jpg) no-repeat;
+  font-family: 'eurostileregular';
+}
+footer
+{
+  background: url(../images/bg-footer.jpg) no-repeat;
+  min-height: 192px;
+}
+header
+{
+  background: url(../images/bg-header.png) no-repeat right bottom;
+  height: 228px;
+  padding-top: 8px;
+}
+h1#site-name
+{
+  margin: 0;
+}
+h1#site-name a
+{
+  background: url(../images/logo-m24.jpg) no-repeat;
+  display: block;
+  height:228px;
+  text-indent: -9999px;
+  width: 470px;
+}
+h2
+{
+  color: #e5581b;
+  font-size: 36px;
+  line-height: 1.5;
+}
 iframe
 {
   height: auto;
   min-height: 433px;
 }
+nav
+{
+  background: #0c0c0c; /* Old browsers */
+  background: -moz-linear-gradient(top,  #0c0c0c 0%, #141414 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0c0c0c), color-stop(100%,#141414)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #0c0c0c 0%,#141414 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #0c0c0c 0%,#141414 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #0c0c0c 0%,#141414 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #0c0c0c 0%,#141414 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0c0c', endColorstr='#141414',GradientType=0 ); /* IE6-9 */
+  border-bottom: 4px solid #e5581b;
+}
+nav ul
+{
+  font-family: 'eurostileregular';
+  margin: 0;
+}
+nav li
+{
+  padding: 10px;
+}
+nav li a
+{
+  color: #FFF;
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+nav li a:hover
+{
+  color: #e5581b;
+  text-decoration: none;
+}
+ul.menu-usuario
+{
+  overflow: hidden;
+}
+ul.menu li
+{
+  padding: 0 10px;
+}
+ul.menu li.first
+{
+  padding-left: 0;
+}
+ul.menu li.last
+{
+  padding-right: 0;
+}
 .copyright
 {
   text-align: center;
+}
+.cuenta-regresiva
+{
+  background: #020202; /* Old browsers */
+  background: -moz-linear-gradient(top,  #020202 0%, #2a2a2a 48%, #020202 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#020202), color-stop(48%,#2a2a2a), color-stop(100%,#020202)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #020202 0%,#2a2a2a 48%,#020202 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #020202 0%,#2a2a2a 48%,#020202 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #020202 0%,#2a2a2a 48%,#020202 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #020202 0%,#2a2a2a 48%,#020202 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020202', endColorstr='#020202',GradientType=0 ); /* IE6-9 */
+  height: 206px;
+  margin: 22px 20px 0 0;
+  text-align: center;
+}
+.cuenta-regresiva .content
+{
+  color: #a9a9a9;
+  font-family: 'digital_display';
+  font-size: 36px;
+  letter-spacing: 1px;
+  padding-top: 8px;
+}
+.cuenta-regresiva p
+{
+  margin: 15px;
+}
+.cuenta-regresiva .dias
+{
+  font-size: 55px;
+  line-height: 36px;
 }
 .menu-usuario li, 
 .menu-utilitario li
@@ -15,9 +175,86 @@ iframe
   float: left;
   list-style: none;
 }
+.menu-utilitario
+{
+  margin: auto;
+  width: 380px;  
+}
+.menu-utilitario a
+{
+  color: #FFF;
+}
+.menu-utilitario a:hover
+{
+  color: #e5581b;
+  text-decoration: none;
+}
+.participa
+{
+  background: rgba(0, 0, 0, .94);
+  height: 54px;
+  margin-top: 90px;
+}
+.participa p
+{
+  margin: 0;
+  text-align: center;
+}
+.participa a
+{
+  color: #e5581b;
+  font-family: 'digital_display';
+  font-size: 60px;
+  letter-spacing: 1px;
+  line-height: 0.9;
+  text-decoration: none;
+}
+.participa a:hover
+{
+  color: #FFF;
+}
+.slogan-superior
+{
+  background: rgba(0, 0, 0, .94);
+  color: #a9a9a9;
+  font-family: 'digital_display';
+  font-size: 21px;
+  left: 0;
+  letter-spacing: 1px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+.slogan-superior p
+{
+  margin: 5px 0;
+}
+.sociales
+{
+  margin-top: 38px;
+}
+.sociales .widgets-element
+{
+  margin-bottom: 5px;
+}
+.sociales .widgets-element:last-child
+{
+  margin-bottom: 0;
+}
+.twitter-timeline
+{
+  min-height: 367px;
+}
 #app
 {
   position: relative;
+}
+#main-wrapper
+{
+  background: #000 url(../images/bg-content.jpg) no-repeat bottom left;
+  color: #FFF;
+  font-size: 17px;
+  font-family: 'eurostileregular';
 }
 #map_canvas
 {
@@ -32,7 +269,14 @@ iframe
   height: 100%;
   top: 0;
 }
-
+#page
+{
+  position: relative;
+}
+#skip-link
+{
+  margin: 0;
+}
 
 /**
  * Autocomplete.

@@ -79,27 +79,6 @@
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
       <?php endif; ?>
-
-      <?php if ($site_name || $site_slogan): ?>
-        <div id="name-and-slogan" class="span6">
-          <?php if ($site_name): ?>
-            <?php if ($title): ?>
-              <div id="site-name"><strong>
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </strong></div>
-            <?php else: /* Use h1 when the content title is empty */ ?>
-              <h1 id="site-name">
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </h1>
-            <?php endif; //title?>
-          <?php endif; //site_name?>
-
-          <?php if ($site_slogan): ?>
-            <div id="site-slogan"><?php print $site_slogan; ?></div>
-          <?php endif; ?>
-        </div> <!-- /#name-and-slogan -->
-      <?php endif; //site_name || site_slogan ?>
-
       <?php print render($page['header']); ?>
     </header>
     <?php if ($main_menu || $secondary_menu): ?>
@@ -108,11 +87,9 @@
       <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
     </nav>
     <?php endif; ?>
-    <?php if ($breadcrumb): ?>
-      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-    <?php endif; ?>
     <?php print $messages; ?>
-    <div id="main-wrapper" class="clearfix row">
+    <div id="main-wrapper" class="clearfix">
+      <div id="wrapper" class="row">
       <section class="column span12">
         <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
         <a id="main-content"></a>
@@ -136,9 +113,12 @@
           <?php print render($page['sidebar_second']); ?>
         </aside> <!-- /#sidebar-second -->
       <?php endif; ?>
+    </div>
   </div> <!-- /#main-wrapper -->
-  <footer class="row">
-    <?php print render($page['footer']); ?>
-  </footer>
-  <?php print render($page['bottom']); ?>
 </div> <!-- /#page-->
+<footer>
+  <div class="f_inner container row">
+  <?php print render($page['footer']); ?>
+  </div>
+</footer>
+<?php print render($page['bottom']); ?>
